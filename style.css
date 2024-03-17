@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Meie+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Caveat", cursive;
+    font-size: 19px;
+    font-style: normal;
+}
+
+.heart {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    animation: 2s float infinite ease-in-out;
+}
+
+.heart::before, .heart::after {
+    position: absolute;
+    content: '';
+    left: 50px;
+    width: 50px;
+    height: 80px;
+    background-color: #ff3333;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.heart:nth-child(1) {
+    transform: scale(1);
+    animation: 2s pulsate infinite ease-in-out;
+}
+
+.heart:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.heart:nth-child(3) {
+    animation-delay: 1.4s;
+}
+
+.heart:nth-child(4) {
+    animation-delay: 1.8s;
+}
+
+.heart:nth-child(5) {
+    animation-delay: 2.2s;
+}
+
+.heart:nth-child(6) {
+    animation-delay: 2.6s;
+}
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes float {
+   from {
+        transform: translateY(0px) scale(0.7) rotate(0deg);
+        opacity: 0.6;
+    }
+    to {
+        transform:  translateY(-250px) scale(0.3) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.heart {
+    cursor: pointer;
+}
+
+.block {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.cartinha {
+    flex-direction: column;
+    padding-top: 10px;
+    display: none;
+    width: 500px;
+    height: 570px;
+    background-color: #181818;
+    border: 6px dashed white;
+    border-radius: 5px;
+
+}
+
+.title-info { 
+    padding-top: 10px;
+    display: flex;
+    color: #ff3333;
+    transition: 0.4s all;
+    justify-content: center
+
+}
+
+.title-info:hover{
+    color: purple;
+    transition: 0.4s all;
+}
+.fechar{
+    font-size: 19px;
+    display: flex;
+    max-width: 30px;
+    margin-left: 460px;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.fechar:hover{
+    transition: 0.4s all;
+    color: #ff3333;
+    transform: translateY(-3px);
+}
+
+.textinho {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.textinho-info {
+    max-width: 390px;
+    text-align: justify;
+}
+
+.coracao2 {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.euteamo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 85px;
+}
+
+.text {
+    margin-left: 15px;
+}
+
+.aperte_aqui {
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    flex-direction: column;
+    
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+#coracao {
+    margin-left: 22px;
+}
