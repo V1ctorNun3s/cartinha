@@ -107,6 +107,7 @@ body {
 }
 
 .cartinha {
+    margin-top: 120px;
     flex-direction: column;
     padding-top: 10px;
     display: none;
@@ -153,7 +154,7 @@ body {
     justify-content: center;
 }
 .textinho-info {
-    max-width: 320px;
+    max-width: 310px;
     text-align: justify;
     color: white;
 }
