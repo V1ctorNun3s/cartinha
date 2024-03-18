@@ -110,7 +110,7 @@ body {
     flex-direction: column;
     padding-top: 10px;
     display: none;
-    width: 500px;
+    width: 450px;
     height: 570px;
     background-color: #181818;
     border: 6px dashed white;
@@ -135,7 +135,8 @@ body {
     font-size: 19px;
     display: flex;
     max-width: 30px;
-    margin-left: 460px;
+    color: white;
+    margin-left: 400px;
     cursor: pointer;
     transition: 0.4s all;
 }
@@ -154,6 +155,7 @@ body {
 .textinho-info {
     max-width: 390px;
     text-align: justify;
+    color: white;
 }
 
 .coracao2 {
@@ -171,8 +173,12 @@ body {
 
 .text {
     margin-left: 15px;
+    color: white;
 }
 
+.text2 {
+    color: white;
+}
 .aperte_aqui {
     justify-content: center;
     align-items: center;
